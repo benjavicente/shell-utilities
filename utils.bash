@@ -1,10 +1,3 @@
-# Shell Utilities
-
-Some useful functions and alias for the shell.
-
-Mostly for Ubuntu on WSL.
-
-```bash
 # Utils
 function command_exists () { type "$1" &> /dev/null; }
 
@@ -23,4 +16,3 @@ function wt { powershell.exe -c "powershell.exe -c 'wt.exe -p Ubuntu -d //wsl\$/
 function win_open { powershell.exe -c "Invoke-Item '$1'"; }
 ## Open the browser (ex: win_browser localhost:8000)
 function win_browser { powershell.exe -c "Start https://$1"; }
-```
